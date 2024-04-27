@@ -47,5 +47,10 @@ body{
     grid-column: 1 / -1;
     background-color: rgba(0, 0, 0, .75);
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    justify-content: space-around;
+    /* vertical alignment */
+    flex-direction: column;
+    padding: 10px;
 }

@@ -53,4 +53,10 @@ body{
     /* flex-direction: column is for vertical alignment */
     flex-direction: column;
     padding: 10px;
+    /* breaks text when it's too long */
+    word-wrap: break-word;
+    /* breaks text or word in the midddle not just end of word */
+    word-break: break-all;
+
 }
+

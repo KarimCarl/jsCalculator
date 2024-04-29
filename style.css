@@ -43,14 +43,14 @@ body{
 
 
 .output {
-    /* -1 means last column */
+    /* 1 means first column to -1 which means last column */
     grid-column: 1 / -1;
     background-color: rgba(0, 0, 0, .75);
     display: flex;
     align-items: flex-end;
     color: white;
     justify-content: space-around;
-    /* vertical alignment */
+    /* flex-direction: column is for vertical alignment */
     flex-direction: column;
     padding: 10px;
 }

@@ -1,3 +1,27 @@
+// This class will take all inputs and functions for our calculator
+class Calculator {
+
+    constructor(previousOperandTextElement, currentOperandTextElement) {
+        this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
+    }
+
+    // function that clears everything every time a user clicks All Clear-AC
+    clear() {
+
+    }
+
+    // function that deletes a number every time a user clicks delete-DEL
+    delete(){
+
+    }
+
+    // function that adds number every time a user clicks on a number
+    appendNumber(){
+
+    }
+}
+
 
 // constant variables for all number buttons
 const numberButtons = document.querySelectorAll('[data-number]')

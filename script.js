@@ -17,9 +17,25 @@ class Calculator {
     }
 
     // function that adds number every time a user clicks on a number
-    appendNumber(){
+    appendNumber(number){
 
     }
+
+    //function that determines which operation will take place when an operation is clicked
+    chooseOperation(operation) {
+
+    }
+
+    // function that shows a single number ater all operations are done
+    compute() {
+
+    }
+
+    // function that updates values in our output
+    updateDisplay() {
+
+    }
+    
 }
 
 

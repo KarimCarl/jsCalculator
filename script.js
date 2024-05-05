@@ -23,6 +23,7 @@ class Calculator {
 
     // function that adds number every time a user clicks on a number
     appendNumber(number){
+        // Instead of changing the current operand, we can the make it the number
         this.currentOperand = number
     }
 

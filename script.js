@@ -38,6 +38,8 @@ class Calculator {
 
     // function that updates values in our output
     updateDisplay() {
+        // this allows us to set text in the current display section
+        this.currentOperandTextElement.innerText = this.currentOperand
 
     }
 

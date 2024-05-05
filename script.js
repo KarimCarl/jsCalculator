@@ -23,7 +23,7 @@ class Calculator {
 
     // function that adds number every time a user clicks on a number
     appendNumber(number){
-
+        this.currentOperand = number
     }
 
     //function that determines which operation will take place when an operation is clicked
@@ -75,7 +75,7 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 numberButtons.forEach(button => {
     // everytime we click a button, it appends the number clicked
     button.addEventListener('click', ()=> {
-        calculator,appendNumber(button.innerText)
+        calculator.appendNumber(button.innerText)
         calculator.updateDisplay()
     } )
 })

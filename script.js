@@ -64,3 +64,17 @@ const previousOperandTextElement = document.querySelector('[data-previous-operan
 
 // constant variables for equals buttons
 const currentOperandTextElement = document.querySelector('[data-current-operand]')
+
+
+// makes all our variables created work in our calculator
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
+
+
+numberButtons.forEach(button => {
+    // everytime we click a button, it appends the number clicked
+    button.addEventListener('click', ()=> {
+        calculator,appendNumber(button.innerText)
+        calculator.updateDisplay()
+    } )
+})
+

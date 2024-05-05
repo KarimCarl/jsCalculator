@@ -4,11 +4,16 @@ class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
+
+        //this.clear() calls a blank calculator with no inputs everytime we create a new calculator
+        this.clear()
     }
 
     // function that clears everything every time a user clicks All Clear-AC
     clear() {
-
+        this.currentOperandTextElement = ''
+        this.previousOperandTextElement = ''
+        this.operation = undefined
     }
 
     // function that deletes a number every time a user clicks delete-DEL
@@ -35,7 +40,7 @@ class Calculator {
     updateDisplay() {
 
     }
-    
+
 }
 
 

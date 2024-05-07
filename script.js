@@ -1,3 +1,6 @@
+    //FIX ISSUES
+    // 1.  FIND DISPLAY ERROR
+
 // This class will take all inputs and functions for our calculator
 class Calculator {
 
@@ -37,6 +40,7 @@ class Calculator {
 
     }
 
+
     // function that updates values in our output
     updateDisplay() {
         // this allows us to set text in the current display section
@@ -75,7 +79,7 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 
 numberButtons.forEach(button => {
     // everytime we click a button, it appends the number clicked
-    button.addEventListener('click', ()=> {
+    button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText)
         calculator.updateDisplay()
     } )

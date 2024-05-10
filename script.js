@@ -10,6 +10,7 @@ class Calculator {
 
         //this.clear() calls a blank calculator with no inputs everytime we create a new calculator
         this.clear()
+         
     }
 
     // function that clears everything every time a user clicks All Clear-AC
@@ -27,7 +28,8 @@ class Calculator {
     // function that adds number every time a user clicks on a number
     appendNumber(number){
         // Instead of changing the current operand, we can the make it the number
-        this.currentOperand = number
+        //This converts the current number to a string so that javascript appends the numbers instead of adding the numbers
+        this.currentOperand = this.currentOperand.toString() + number.toString()
     }
 
     //function that determines which operation will take place when an operation is clicked

@@ -14,8 +14,8 @@ class Calculator {
 
     // function that clears everything every time a user clicks All Clear-AC
     clear() {
-        this.currentOperandTextElement = ''
-        this.previousOperandTextElement = ''
+        this.currentOperand = ''
+        this.previousOperand = ''
         this.operation = undefined
     }
 

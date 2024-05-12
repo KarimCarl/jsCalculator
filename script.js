@@ -36,6 +36,9 @@ class Calculator {
 
     //function that determines which operation will take place when an operation is clicked
     chooseOperation(operation) {
+        //This checks whether the current operand is empty, if it is, it return nothing
+        if (this.currentOperand === '') return
+        
         //This sets the operation we passed in
         this.operation = operation
         //This pushes the current operan to the previous operand after operation

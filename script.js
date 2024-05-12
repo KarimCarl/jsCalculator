@@ -36,7 +36,7 @@ class Calculator {
 
     //function that determines which operation will take place when an operation is clicked
     chooseOperation(operation) {
-
+        
     }
 
     // function that shows a single number ater all operations are done
@@ -89,3 +89,12 @@ numberButtons.forEach(button => {
     } )
 })
 
+
+// Copied the numberButtons but modified it to create operation functionality   
+operationButtons.forEach(button => {
+    // everytime we click an operation button, it chooses the operation clicked
+    button.addEventListener('click', () => {
+        calculator.chooseOperation(button.innerText)
+        calculator.updateDisplay()
+    } )
+})

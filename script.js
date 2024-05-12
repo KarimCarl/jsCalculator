@@ -54,6 +54,8 @@ class Calculator {
     updateDisplay() {
         // this allows us to set text in the current display section
         this.currentOperandTextElement.innerText = this.currentOperand
+        // this alupdates the text in the previous display section
+        this.previousOperandTextElement.innerText = this.previousOperand
 
     }
 

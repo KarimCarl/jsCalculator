@@ -36,7 +36,12 @@ class Calculator {
 
     //function that determines which operation will take place when an operation is clicked
     chooseOperation(operation) {
-        
+        //This sets the operation we passed in
+        this.operation = operation
+        //This pushes the current operan to the previous operand after operation
+        this.previousOperand = this.currentOperand
+        //Then this line of code clears the current operand 
+        this.currentOperand = ''
     }
 
     // function that shows a single number ater all operations are done

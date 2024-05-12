@@ -27,6 +27,8 @@ class Calculator {
 
     // function that adds number every time a user clicks on a number
     appendNumber(number){
+        //This checks whether the dot/period . already exists and stops it from being added more than once
+        if((number === '.') && (this.currentOperand.includes('.'))) return
         // Instead of changing the current operand, we can the make it the number
         //This converts the current number to a string so that javascript appends the numbers instead of adding the numbers
         this.currentOperand = this.currentOperand.toString() + number.toString()

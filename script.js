@@ -38,7 +38,12 @@ class Calculator {
     chooseOperation(operation) {
         //This checks whether the current operand is empty, if it is, it return nothing
         if (this.currentOperand === '') return
-        
+
+        //This checks if the previous operand is not eual to empty and then computes it
+        if (this.previousOperand !== '') {
+            this.compute()
+        }
+    
         //This sets the operation we passed in
         this.operation = operation
         //This pushes the current operan to the previous operand after operation

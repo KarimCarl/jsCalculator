@@ -40,6 +40,7 @@ class Calculator {
         if (this.currentOperand === '') return
 
         //This checks if the previous operand is not eual to empty and then computes it
+        //This code also prepends any operation added to a completed one 
         if (this.previousOperand !== '') {
             this.compute()
         }

@@ -114,3 +114,8 @@ operationButtons.forEach(button => {
         calculator.updateDisplay()
     } )
 })
+
+// This defines how computation works in the calculator
+equalsButton.addEventListener('click', button => {
+
+} )

@@ -80,6 +80,9 @@ class Calculator {
             case '*':
                 computation = prev * current
                 break 
+            //default is the else that returns when none of the operations execute
+            default:
+                return
         }
 
     }

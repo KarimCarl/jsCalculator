@@ -66,7 +66,9 @@ class Calculator {
 
         //Using the switch to define all operation buttons
         switch (this.operation) {
-            
+            case '+':
+                computation = prev + current
+                break 
         }
 
     }

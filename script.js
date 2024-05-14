@@ -116,6 +116,11 @@ operationButtons.forEach(button => {
 })
 
 // This defines how computation works in the calculator
+//When the equls button is clicked
 equalsButton.addEventListener('click', button => {
+    //It calls the compute function
+    this.compute()
+    //It then updates the display
+    this.updateDisplay()
 
 } )

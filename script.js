@@ -61,7 +61,8 @@ class Calculator {
         let prev = parseFloat(this.previousOperand)
         //current variable stores the number version of our current operand 
         let current = parseFloat(this.currentOperand)
-
+        //This checks if the previous or current operand is empty, if it is, it returns thus cancels fn completely
+        if(isNaN(prev) || isNaN(current)) return
     }
 
 

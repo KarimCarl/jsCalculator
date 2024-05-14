@@ -53,8 +53,14 @@ class Calculator {
         this.currentOperand = ''
     }
 
-    // function that shows a single number ater all operations are done
+    // function that shows a single number after all operations are done
     compute() {
+        //computation variable is the result of our compute fn
+        let computation
+        //previous variable stores the number version of our previous operand 
+        let prev = parseFloat(this.previousOperand)
+        //current variable stores the number version of our current operand 
+        let current = parseFloat(this.currentOperand)
 
     }
 
@@ -122,5 +128,4 @@ equalsButton.addEventListener('click', button => {
     this.compute()
     //It then updates the display
     this.updateDisplay()
-
 } )

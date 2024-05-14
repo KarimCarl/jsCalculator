@@ -84,7 +84,12 @@ class Calculator {
             default:
                 return
         }
-
+        //sets the current value to the result of the computation
+        this.currentOperand = computation
+        //operation is set as undefined until user sets an operation
+        this.operation = undefined
+        //previous operand in the calc is set to empty
+        this.previousOperand = ''
     }
 
 
